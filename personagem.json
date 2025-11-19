@@ -1,0 +1,20 @@
+{
+    "nome": "gsvmolpenge",
+    "raca": "Humano",
+    "classe": "Guerreiro",
+    "atributos": {
+        "Força": 16,
+        "Destreza": 13,
+        "Constituição": 16,
+        "Inteligência": 5,
+        "Sabedoria": 10,
+        "Carisma": 10
+    },
+    "habilidades_raca": "Aprendizado: +10% em toda XP recebida.\nAdaptabilidade: +1 em uma Jogada de Proteção à escolha.",
+    "habilidades_classe": "BA mais rápido, pode usar todas as armas e armaduras.\nRecebe ataques extras conforme evolui.",
+    "movimento": 9,
+    "infravisao": false,
+    "dado_vida": "1d10",
+    "armaduras": "Todas",
+    "armas": "Todas"
+}

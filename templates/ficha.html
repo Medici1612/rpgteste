@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ficha do Personagem</title>
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+</head>
+<body class="bg-dark text-light">
+    <div class="container mt-5">
+        <div class="text-center mb-4">
+            <h1 class="display-4 text-warning">Ficha de {{ personagem.nome }}</h1>
+        </div>
+        <div class="card bg-secondary p-4 shadow-lg">
+            <p><strong>Raça:</strong> {{ personagem.raca }}</p>
+            <p><strong>Classe:</strong> {{ personagem.classe }}</p>
+            <p><strong>Atributos:</strong><br>{{ personagem.atributos | replace('\n', '<br>') | safe }}</p>
+            <p><strong>Movimento:</strong> {{ personagem.movimento }}m</p>
+            <p><strong>Infravisão:</strong> {{ personagem.infravisao }}</p>
+            <p><strong>Dado de Vida:</strong> {{ personagem.dado_vida }}</p>
+            <p><strong>Armaduras:</strong> {{ personagem.armaduras }}</p>
+            <p><strong>Armas:</strong> {{ personagem.armas }}</p>
+            <h3 class="text-warning">Habilidades Raciais:</h3>
+            <p>{{ personagem.habilidades_raca | replace('\n', '<br>') | safe }}</p>
+            <h3 class="text-warning">Habilidades de Classe:</h3>
+            <p>{{ personagem.habilidades_classe | replace('\n', '<br>') | safe }}</p>
+            <a href="{{ url_for('personagem.index') }}" class="btn btn-warning mt-3">
+
+    Criar outro personagem
+</a>
+

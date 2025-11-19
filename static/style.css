@@ -1,0 +1,14 @@
+body {
+    background-image: url('https://www.transparenttextures.com/patterns/old-wall.png');
+    background-color: #2c2c2c;
+    font-family: 'Georgia', serif;
+}
+.card {
+    border: 2px solid #d4af37;
+}
+h1, h3 {
+    font-family: 'Cinzel', serif;
+}
+
+/* improved */
+.container{max-width:800px;margin:auto;padding:20px;} .card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 5px rgba(0,0,0,0.1);} body{background:#f3f3f3;font-family:sans-serif;}

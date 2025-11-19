@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Criação de Personagem - Old Dragon RPG</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-dark text-light">
+    <div class="container mt-5">
+
+        <div class="text-center mb-4">
+            <h1 class="display-4 text-warning">OLD DRAGON RPG</h1>
+            <p class="lead">Crie seu personagem e embarque na aventura!</p>
+        </div>
+
+        <!-- Animação -->
+        <div id="dice-animation" style="display:none; text-align:center; margin-bottom:20px;">
+            <p class="text-warning">Rolando dados...</p>
+        </div>
+
+        <div class="card bg-secondary p-4 shadow-lg">
+            <form method="POST">
+
+                <div class="mb-3">
+                    <label class="form-label">Nome do Personagem:</label>
+                    <input type="text" name="nome" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Raça:</label>
+                    <select name="raca" class="form-select">
+                        <option value="humano">Humano</option>
+                        <option value="elfo">Elfo</option>
+                        <option value="anao">Anão</option>
+                        <option value="halfling">Halfling</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Classe:</label>
+                    <select name="classe" class="form-select">
+                        <option value="guerreiro">Guerreiro</option>
+                        <option value="clerigo">Clérigo</option>
+                        <option value="ladrao">Ladrão</option>
+                        <option value="mago">Mago</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Método de Atributos:</label>
+                    <select name="metodo" class="form-select">
+                        <option value="classico">Clássico</option>
+                        <option value="livre">Aventureiro</option>
+                        <option value="heroico">Heróico</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-warning w-100">Criar Personagem</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", function() {
+            document.getElementById("dice-animation").style.display = "block";
+        });
+    </script>
+</body>
+</html>
